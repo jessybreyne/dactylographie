@@ -1,0 +1,67 @@
+main {
+  padding: 20px !important;
+}
+
+section {
+  margin-bottom: 20px !important;
+}
+/* ensure a 3:1 ratio until the component is loaded */
+x-keyboard p {
+  margin: 0;
+  padding: 0 0 calc(33% - 10px);
+}
+
+
+/******************************************************************************
+ * Text prompt & input
+ */
+
+
+textarea {
+  width: 100%;
+}
+
+#txtInput.active { background-color: #dfd; }
+#txtInput.error  { background-color: #f00; }
+
+
+/******************************************************************************
+ * Visual hints
+ */
+
+#hands {
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  width: 150px;
+  height: 90px;
+  overflow: hidden;
+  display: none;
+}
+
+
+
+.hints #hands {
+  display: block;
+}
+
+#hands span {
+  background-position: left top;
+  background-repeat: no-repeat;
+  height: 90px;
+  position: absolute;
+  top: 0;
+}
+
+#leftHand   { left:  0px; width: 52px; background-image: url(hints/leftHand.png);   }
+#leftThumb  { left: 52px; width: 23px; background-image: url(hints/leftThumb.png);  }
+#rightThumb { left: 75px; width: 23px; background-image: url(hints/rightThumb.png); }
+#rightHand  { left: 97px; width: 52px; background-image: url(hints/rightHand.png);  }
+
+.l5 #leftHand, .r5 #rightHand { background-position-y:  -90px; }
+.l4 #leftHand, .r4 #rightHand { background-position-y: -180px; }
+.l3 #leftHand, .r3 #rightHand { background-position-y: -270px; }
+.l2 #leftHand, .r2 #rightHand { background-position-y: -360px; }
+
+.m1 #leftThumb, .m1 #rightThumb,
+.l1 #leftThumb, .r1 #rightThumb { background-position-y: -90px; }

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="An online typing tutor for modern web browsers.">
+  <title> Dactylographie </title>
+  <script type="module" src="./x-keyboard.js"></script>
+  <script src="./webtypist.js" type="text/javascript" defer></script>
+  <link href="./pico-master/css/pico.classless.min.css" type="text/css" rel="stylesheet"><link href="./webtypist.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <section id="accordions">
+        <details>
+          <summary>Menu</summary> 
+          <form>
+            <div class="form-group">
+              <select class="form-select" id="layout">
+                <option> (loading…) </option>
+              </select>
+              <select class="form-select" id="shape">
+                <option value="" selected>(auto)</option>
+                <option value="alt">  ALT  </option>
+                <option value="abnt"> ABNT </option>
+                <option value="iso">  ISO  </option>
+                <option value="ansi"> ANSI </option>
+                <option value="ol60"> TMx  </option>
+                <option value="ol50"> 50%  </option>
+                <option value="ol40"> 40%  </option>
+              </select>
+              <div class="form-group">
+                <label for="hints" class="form-switch">
+                  <input id="hints" type="checkbox" role="switch">
+                  <i class="form-icon"></i> Hints
+                </label>
+              </div>
+            </div>
+          </form>
+          <div>
+            <div id="metrics">
+              <span id="speed">0</span> cpm
+              <span id="accuracy">0</span> errors
+            </div>
+          </div>
+          <footer>
+            Copyleft Jessy BREYNE
+            — <a href="https://github.com/fabi1cazenave/webtypist">project page</a>
+          </footer>
+        </details>
+      </section>
+      <form>
+        <select id="lesson">
+          <option> (loading…) </option>
+        </select>
+        <select id="level">
+          <option value="-1"> (loading…) </option>
+        </select>
+      </form>
+      <div class="form-group">
+        <textarea class="form-input" id="txtPrompt" readonly="true"></textarea>
+      </div>
+      <div class="form-group">
+        <textarea class="form-input" id="txtInput" spellcheck="false"></textarea>
+      </div>
+      <section>
+        <div id="hands">
+          <span id="leftHand"></span>
+          <span id="leftThumb"></span>
+          <span id="rightThumb"></span>
+          <span id="rightHand"></span>
+        </div>
+      </section>
+      <x-keyboard id="keyboard">
+        <p>Loading web component…</p>
+      </x-keyboard>
+    </main>
+  </body>
+</html>
