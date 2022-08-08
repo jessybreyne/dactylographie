@@ -1,5 +1,5 @@
-const keylayoutBaseURL = 'https://fabi1cazenave.github.io/x-keyboard/layouts';
-// const keylayoutBaseURL = 'https://jessybreyne.github.io/x-keyboard/layouts';
+// const keylayoutBaseURL = 'https://fabi1cazenave.github.io/x-keyboard/layouts';
+const keylayoutBaseURL = 'https://jessybreyne.github.io/x-keyboard/layouts';
 
 /******************************************************************************
  * User Interface: layout and lesson selectors
