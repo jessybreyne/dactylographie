@@ -1,5 +1,5 @@
 // const keylayoutBaseURL = 'https://fabi1cazenave.github.io/x-keyboard/layouts';
-const keylayoutBaseURL = 'https://jessybreyne.github.io/x-keyboard/layouts';
+const keylayoutBaseURL = 'https://jessybreyne.github.io/dactylographie/x-keyboard/layouts';
 
 /******************************************************************************
  * User Interface: layout and lesson selectors
@@ -131,9 +131,9 @@ const gTypist = (function(window, document, undefined) {
       if (value === text.substr(pos, 1)) {
         // correct key: append it to the text input
         event.target.value += value;
-        let elem = event.target;
-        elem.setAttribute("aria-invalid", "false");
-        setTimeout(() => elem.setAttribute("aria-invalid", ""), 2000);
+        // let elem = event.target;
+        // elem.setAttribute("aria-invalid", "false");
+        // setTimeout(() => elem.setAttribute("aria-invalid", ""), 2000);
         if (pos < text.length - 1) {
           highlightKey(text.substr(pos + 1, 1));
         } else { // finished
