@@ -14,11 +14,10 @@
         <details>
           <summary>Menu</summary> 
           <form>
-            <div class="form-group">
-              <select class="form-select" id="layout">
+              <select id="layout">
                 <option> (loading…) </option>
               </select>
-              <select class="form-select" id="shape">
+              <select id="shape">
                 <option value="" selected>(auto)</option>
                 <option value="alt">  ALT  </option>
                 <option value="abnt"> ABNT </option>
@@ -28,13 +27,10 @@
                 <option value="ol50"> 50%  </option>
                 <option value="ol40"> 40%  </option>
               </select>
-              <div class="form-group">
-                <label for="hints" class="form-switch">
-                  <input id="hints" type="checkbox" role="switch">
-                  <i class="form-icon"></i> Hints
-                </label>
-              </div>
-            </div>
+              <label for="hints">
+                <input id="hints" type="checkbox" role="switch">
+                Hints
+              </label>
           </form>
           <div>
             <div id="metrics">
@@ -56,12 +52,8 @@
           <option value="-1"> (loading…) </option>
         </select>
       </form>
-      <div class="form-group">
-        <textarea class="form-input" id="txtPrompt" readonly="true"></textarea>
-      </div>
-      <div class="form-group">
-        <textarea class="form-input" id="txtInput" spellcheck="false"></textarea>
-      </div>
+      <textarea id="txtPrompt" readonly="true"></textarea>
+      <textarea id="txtInput" spellcheck="false"></textarea>
       <section>
         <div id="hands">
           <span id="leftHand"></span>
