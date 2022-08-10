@@ -131,8 +131,8 @@ const gTypist = (function(window, document, undefined) {
       if (value === text.substr(pos, 1)) {
         // correct key: append it to the text input
         event.target.value += value;
-        // let elem = event.target;
-        // elem.setAttribute("aria-invalid", "false");
+        let elem = event.target;
+        elem.setAttribute("aria-invalid", "");
         // setTimeout(() => elem.setAttribute("aria-invalid", ""), 2000);
         if (pos < text.length - 1) {
           highlightKey(text.substr(pos + 1, 1));
@@ -144,8 +144,11 @@ const gTypist = (function(window, document, undefined) {
         // typo: increment the counter and flash the text input
         typos++;
         let elem = event.target;
-        elem.setAttribute("aria-invalid", "true");
-        setTimeout(() => elem.setAttribute("aria-invalid", ""), 3000);
+        if(!elem.getAttribute("aria-invalid")){
+          elem.setAttribute("aria-invalid", "true");
+          setTimeout(() => elem.setAttribute("aria-invalid", ""), 3000);
+        }
+        
       }
     } else if (ui.keyboard.layout.pendingDK) { // dead key
       highlightKey(text.substr(pos, 1));
