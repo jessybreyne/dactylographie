@@ -562,7 +562,7 @@
     <lesson>
       <id>{f9f82b7b-070d-462b-8b2d-e8b2e133e124}</id>
       <title>Leçon 14 - Programmation</title>
-      <newCharacters>(){[]}<>-:,.</newCharacters>
+      <newCharacters>(){[]</newCharacters>
       <text>
        function () { return 1; };
        let func = () => { return [1, 2 , 3]; };
