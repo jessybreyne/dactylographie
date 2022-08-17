@@ -565,8 +565,29 @@
       <newCharacters>(){[]</newCharacters>
       <text>
        function () { return 1; };
-       let func = () => { return [1, 2 , 3]; };
-       :wq :q! /search 
+       let func = () => { return [1, 2, 3]; };
+       :wq :q! /search :w  
+       $var = "L'intuition";
+       $var_php = 'my string';
+       // comment
+       # comment
+       2*2+2-2=4
+       &amp;&amp; ||
+       `magic quote`
+       cd ~/.config
+       &lt;html>&lt;/html> &lt;React /> &lt;input value="55"> 
+      </text>
+    </lesson>
+
+    <lesson>
+      <id>{f9f82b7b-070d-462b-8b2d-e8b2e133e125}</id>
+      <title>Leçon 15 - Symboles</title>
+      <newCharacters>(){[]</newCharacters>
+      <text>
+       prénom.nom@email.com
+       Quoi ? Quoi! D'accord, Y'a-t-il ?
+       @&amp;#$!
+       10% de 100€ = 10€
       </text>
     </lesson>
 
